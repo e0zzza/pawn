@@ -1,3 +1,20 @@
-# pawn
-This is not a real platform, not connected to any backend, and does not provide working features such as login, signup, or video playback.  All images, names, and concepts are used only for educational purposes. No copyright infringement is intended, and no original content is being distributed.
-Project will not be enhanced nor updated.
+#Pawm 
+
+Pawm is a non‑functional frontend simple project created for learning and practicing HTML and Bootstrap.
+This project is not a real website, does not include backend logic, and none of the features (login, signup, search, video playback, profiles, etc.) are operational.
+
+This repository exists purely for educational purposes as part of a school assignment focused on:
+practicing layout structure
+experimenting with Bootstrap components
+learning responsive design
+exploring UI styling and page composition
+etc.
+
+# Project Status — Not Maintained ⚠️ #
+This project is no longer being developed or updated.
+It serves only as a static example of frontend practice and # will not receive new features, fixes, or improvements. #
+
+Image Source & Copyright
+All images used in this project were sourced from Pinterest and are included only for educational and demonstrational purposes.
+No copyright infringement is intended, and no original copyrighted content is being distributed.
+

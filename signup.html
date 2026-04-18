@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pawm Sign Up</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background: linear-gradient(135deg, #f5f5f7, #e8e8ec);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .signup-card {
+        width: 380px;
+        padding: 30px;
+        background-color: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      }
+
+      .form-control {
+        border-radius: 50px;
+        background-color: #f5f5f7;
+        border: none;
+      }
+
+      .form-control:focus {
+        background-color: #ffffff;
+        box-shadow: 0 0 0 3px rgba(150, 150, 255, 0.2);
+      }
+
+      .logo {
+        display: block;
+        margin: 0 auto 10px auto;
+      }
+    </style>
+    <style type="text/css">body { cursor: url('data:image/x-icon;base64,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tP/uhq//832m///u/f/79v//4J+2/+Cftv/gn7b/4J+2//7r///55Pr/3Xi3/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPF+t//27P3//+v5/+Cftv/5nef/9qPt/+Cftv/77vz/9fT9//282v/Oeqj/4J+2//Z1sv/9cq//+m+s//NspP/1p8n/+fT9///x/f/gn7b/9JXy//qU4//gn7b/4J+2//zz///dfrD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6nm1//Xt/v/gn7b/4J+2//h7yv/gn7b/4J+2//z1/P/37/n/+O/8//3U8P/llb//5Xip/+dvqf/se7P/9afQ//vr/P/09v7//vH//+Cftv//pez/9Ya+//iAtv/wn8n/+vT//9uBr/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADle7b/+vL9/+Cftv/gn7b/8nC2/+Cftv/gn7b//vP9//bs+f/68f3/++z9//30/v//7v3//e7///3n///56P7/9vP///b1/v/48v3/4J+2/+Cftv/gn7b/932r//+Zxv/37f7/2464/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOqAtf/87/3/8tDq/+Cftv/gn7b/4J+2//nt///78/7//unw/+Cftv/gn7b//unw//74/f/99f///unw/+Cftv/gn7b/4J+2//vz/f/79v//4J+2/+Cftv/gn7b/4J+2//fz///fgbT/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB0Hqr///R8v/07/j//O76//rc8P/47f3/8vX9///s///zp+H/+6Tu//ad7P/0pej/+un+//rx+//4q+T/+aHt//ui7P/gn7b/4J+2//ny///68f7/+eT2//3y/P/3+Pz/+9f//+CHv/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAC7YG2/+acy//+6f3///D+///o/v/+8f//97LT//SVyP/7mtr//Jzi/+Cftv/66f7/+un+//qZ0v/+mdD/+5fR//KWxf/1r87/+un+///y/v/+6///+/D///bM7P/mgbj/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUAAAAE24W2/+CDtv/oh8D/+Mvs//vp+v/6mMT/+H+y//mAuv/2ir//+5jG//rp/v/66f7//Y66//uGt//8hrf/+4e2//KNs///7/r//ez6/+t/uv/egrf/34Wz/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9+Lwf/0xur///H///GDs//3crD/83Sy/+6Jvf/gn7b/+un+//rp/v/gn7b/93av//d2sf/7fbH/9420//7v9///5f3/5oG4/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6aXP/+Sjzf/46ff/+7bj/+Cftv/gn7b/8n65/+yDtv/66f7/++r4/+SBsf/gn7b/8Xq1//l6t//xi7r//fH9//rg/v/pibj/AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG3Hi5//zz///gn7b/zI63//B8s//6hLn//LLU//31/P/+/Pz/4J+2/9aBrf/scq7/9HS1//ey1//87fv/4orA//jh8/8AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADbfbP//8Xv//zv///gn7b/4J+2/+Cftv/+6fD/+un+//rv///67///4J+2/+Cftv/utNT/+uz+//vg/f/gg7r/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPNspP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwg7j/+Mrp//rn+P/96/z//Oj7///w/f/66f7/+un+//vx///78/7//e39//rp/v/96v//44W8/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA82yk//NspP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADkf7f/5Xy1/+aDv//kg7v/64C5/wAAABAAAAAM6YS8/+N+vP/hf7v/5oW+/+l4vP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADzbKT//4m8//NspP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAABAAAAAgAAAAIAAAACAAAAAgAAAAIAAAAAAAAAAAAAAAIAAAACAAAAAgAAAAIAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPNspP//ibz//4m8//NspP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA82yk//+JvP//ibz//4m8//NspP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADzbKT//4m8//+JvP//ibz//4m8//NspP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPNspP/zbKT/82yk//NspP/zbKT/82yk//NspP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA///////////////////////AwP//gAB//wAAP/8AAD//AAA//gAAH/4AAB/4AAAH+AAAB/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/gAAAf8AAAP/wAAP/8AAD//gAA//4AAf3/AAP8/4MH/H////w////8H////A////wH///8='), auto; }</style>
+  </head>
+
+  <body>
+
+    <div class="signup-card">
+
+      <img src="logopawm.png" alt="Logo" width="60" height="60" class="logo">
+
+      <h3 class="text-center fw-light mb-4">Create your Pawm account</h3>
+
+      <form>
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="username" placeholder="Username" required>
+          <label for="username">Username</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="email" placeholder="Email" required>
+          <label for="email">Email address</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="password" placeholder="Password" required>
+          <label for="password">Password</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
+          <label for="confirmPassword">Confirm Password</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100 rounded-pill">
+          Sign Up
+        </button>
+      </form>
+
+      <p class="text-center mt-3 text-muted">
+        Already have an account?
+        <a href="login.html" class="text-decoration-none">Login</a>
+      </p>
+    </div>
+
+  </body>
+</html>
+
